@@ -1,0 +1,16 @@
+===================
+Modifier subscripts
+===================
+≡⌞?
+-------------------
+(source_file (expr (line (unit (macro_invk
+	(macro (macro_ident
+		(builtin_macro1
+			(prim_rows)
+			(subscript)
+		)
+	))
+	(macro_args
+		(unit (func (builtin_func0 (prim_stack))))
+	)
+)))))

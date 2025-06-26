@@ -1,0 +1,16 @@
+==============
+Function packs
+==============
+⊃(123|456)
+--------------
+(source_file (expr (line (unit (macro_invk
+	(macro (macro_ident
+		(builtin_macro2 (prim_fork))
+	))
+	(macro_args (pack
+		(pack_params
+			(expr (line (unit (literal (number)))))
+			(expr (line (unit (literal (number)))))
+		)
+	))
+)))))
