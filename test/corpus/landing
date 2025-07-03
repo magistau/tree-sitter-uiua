@@ -1,0 +1,355 @@
+===========
+Saying Less
+===========
+⍥◡+9 .1
+-----------
+(source_file (expr (line
+	(unit (macro_invk
+		(macro (macro_ident (builtin_macro1 (prim_repeat))))
+		(macro_args
+			(unit (macro_invk
+				(macro (macro_ident (builtin_macro1 (prim_below))))
+				(macro_args
+					(unit (func (builtin_func2 (prim_add))))
+				)
+			))
+		)
+	))
+	(unit (literal (number)))
+	(unit (func (builtin_func1 (prim_duplicate))))
+	(unit (literal (number)))
+)))
+
+===========
+True Arrays
+===========
+◿5 ↯3_4 ⇡12
+-----------
+(source_file (expr (line
+	(unit (func (builtin_func2 (prim_modulus))))
+	(unit (literal (number)))
+	(unit (func (builtin_func2 (prim_reshape))))
+	(unit (strand
+		(literal (number))
+		(literal (number))
+	))
+	(unit (func (builtin_func1 (prim_range))))
+	(unit (literal (number)))
+)))
+
+
+=================
+Rich Primitives 0
+=================
+◴ "hello, world!"
+-----------------
+
+(source_file (expr (line
+	(unit (func (builtin_func1 (prim_deduplicate))))
+	(unit (literal (string)))
+)))
+
+=================
+Rich Primitives 1
+=================
+⍆ [2 8 3 2 1 5]
+-----------------
+
+(source_file (expr (line
+	(unit (func (builtin_func1 (prim_sort))))
+	(unit (expr (line
+		(unit (literal (number)))
+		(unit (literal (number)))
+		(unit (literal (number)))
+		(unit (literal (number)))
+		(unit (literal (number)))
+		(unit (literal (number)))
+	)))
+)))
+
+=================
+Rich Primitives 2
+=================
+°(÷2+1) [1 2 3 4]
+-----------------
+
+(source_file (expr (line
+	(unit (macro_invk
+		(macro (macro_ident (builtin_macro1 (prim_un))))
+		(macro_args
+			(unit (expr (line
+				(unit (func (builtin_func2 (prim_divide))))
+				(unit (literal (number)))
+				(unit (func (builtin_func2 (prim_add))))
+				(unit (literal (number)))
+			)))
+		)
+	))
+	(unit (expr (line
+		(unit (literal (number)))
+		(unit (literal (number)))
+		(unit (literal (number)))
+		(unit (literal (number)))
+	)))
+)))
+
+=================
+Friendly Glyphs 0
+=================
+⚂ # Random number
+-----------------
+
+(source_file
+	(expr (line
+		(unit (func (builtin_func0 (prim_random))))
+	))
+	(comment)
+)
+
+=================
+Friendly Glyphs 1
+=================
+⇡8 # Range up to
+-----------------
+
+(source_file
+	(expr (line
+		(unit (func (builtin_func1 (prim_range))))
+		(unit (literal (number)))
+	))
+	(comment)
+)
+
+=================
+Friendly Glyphs 2
+=================
+⇌ 1_2_3_4 # Reverse
+-----------------
+
+(source_file
+	(expr (line
+		(unit (func (builtin_func1 (prim_reverse))))
+		(unit (strand
+			(literal (number))
+			(literal (number))
+			(literal (number))
+			(literal (number))
+		))
+	))
+	(comment)
+)
+
+
+=================
+Friendly Glyphs 3
+=================
+⌕ "ab" "abracabra" # Find
+-----------------
+
+(source_file
+	(expr (line
+		(unit (func (builtin_func2 (prim_find))))
+		(unit (literal (string)))
+		(unit (literal (string)))
+	))
+	(comment)
+)
+
+=================
+Friendly Glyphs 4
+=================
+⊟ 1_2_3 4_5_6 # Couple
+-----------------
+
+(source_file
+	(expr (line
+		(unit (func (builtin_func2 (prim_couple))))
+		(unit (strand
+			(literal (number))
+			(literal (number))
+			(literal (number))
+		))
+		(unit (strand
+			(literal (number))
+			(literal (number))
+			(literal (number))
+		))
+	))
+	(comment)
+)
+
+
+=================
+Unicode Formatter
+=================
+floor*10repeatrand5
+-----------------
+
+(source_file
+	(expr (line
+		(unit (func (builtin_func1 (prim_floor))))
+		(unit (func (builtin_func2 (prim_multiply))))
+		(unit (literal (number)))
+		(unit (macro_invk 
+			(macro (macro_ident (builtin_macro1 (prim_repeat))))
+			(macro_args
+				(unit (func (builtin_func0 (prim_random))))
+			)
+		)
+		(unit (literal (number)))
+	))
+)
+
+===================
+Multimedia Output 0
+===================
+⍉⊞<⊞+⇡3∿∩(÷25)⇡240⇡80
+-------------------
+
+(source_file (expr (line
+	(unit (func (builtin_func1 (prim_transpose))))
+	(unit (macro_invk
+		(macro (macro_ident (builtin_macro1 (prim_table))))
+		(macro_args
+			(unit (func (builtin_func2 (prim_less_than))))
+		)
+	))
+	(unit (macro_invk
+		(macro (macro_ident (builtin_macro1 (prim_table))))
+		(macro_args
+			(unit (func (builtin_func2 (prim_add))))
+		)
+	))
+	(unit (func (builtin_func1 (prim_range))))
+	(unit (literal (number)))
+	(unit (func (builtin_func1 (prim_sine))))
+	(unit (macro_invk
+		(macro (macro_ident (builtin_macro1 (prim_both))))
+		(macro_args
+			(unit (expr (line
+				(unit (func (builtin_func2 (prim_divide))))
+				(unit (literal (number)))
+			)))
+		)
+	))
+	(unit (func (builtin_func1 (prim_range))))
+	(unit (literal (number)))
+	(unit (func (builtin_func1 (prim_range))))
+	(unit (literal (number)))
+)))
+
+===================
+Multimedia Output 1
+===================
+÷3/+∿⊞×⊟×1.5.220×τ÷⟜⇡&asr
+-------------------
+
+(source_file (expr (line
+	(unit (func (builtin_func2 (prim_divide))))
+	(unit (literal (number)))
+	(unit (macro_invk
+		(macro (macro_ident (builtin_macro1 (prim_reduce))))
+		(macro_args
+			(unit (func (builtin_func2 (prim_add))))
+		)
+	))
+	(unit (func (builtin_func1 (prim_sine))))
+	(unit (macro_invk
+		(macro (macro_ident (builtin_macro1 (prim_table))))
+		(macro_args
+			(unit (func (builtin_func2 (prim_multiply))))
+		)
+	))
+	(unit (func (builtin_func2 (prim_couple))))
+	(unit (func (builtin_func2 (prim_multiply))))
+	(unit (literal (number)))
+	(unit (func (builtin_func1 (prim_duplicate))))
+	(unit (literal (number)))
+	(unit (func (builtin_func2 (prim_multiply))))
+	(unit (func (builtin_func0 (prim_tau))))
+	(unit (func (builtin_func2 (prim_divide))))
+	(unit (macro_invk
+		(macro (macro_ident (builtin_macro1 (prim_on))))
+		(macro_args
+			(unit (func (builtin_func1 (prim_range))))
+		)
+	))
+	(unit (func (sub_ident)))
+)))
+
+===================
+Multimedia Output 2
+===================
+Xy ← ⍉⍉⊞⊟.÷⟜⇡
+F  ← ⍉◿1⊂⊃(+/÷|÷3+1∿×τ+)Xy
+≡F100 ÷⟜⇡10
+-------------------
+(source_file (expr
+	(binding (identifier (sub_ident)) (line
+		(unit (func (builtin_func1 (prim_transpose))))
+		(unit (func (builtin_func1 (prim_transpose))))
+		(unit (macro_invk
+			(macro (macro_ident (builtin_macro1 (prim_table))))
+			(macro_args
+				(unit (func (builtin_func2 (prim_couple))))
+			)
+		))
+		(unit (func (builtin_func1 (prim_duplicate))))
+		(unit (func (builtin_func2 (prim_divide))))
+		(unit (macro_invk
+			(macro (macro_ident (builtin_macro1 (prim_on))))
+			(macro_args
+				(unit (func (builtin_func1 (prim_range))))
+			)
+		))
+	))
+	(binding (identifier (sub_ident)) (line
+		(unit (func (builtin_func1 (prim_transpose))))
+		(unit (func (builtin_func2 (prim_modulus))))
+		(unit (literal (number)))
+		(unit (func (builtin_func2 (prim_join))))
+		(unit (macro_invk
+			(macro (macro_ident (builtin_macro2 (prim_fork))))
+			(macro_args (pack
+				(expr (line 
+					(unit (func (builtin_func2 (prim_add))))
+					(unit (macro_invk
+						(macro (macro_ident (builtin_macro1 (prim_reduce))))
+						(macro_args
+							(unit (func (builtin_func2 (prim_divide))))
+						)
+					))
+				))
+				(expr (line
+					(unit (func (builtin_func2 (prim_divide))))
+					(unit (literal (number)))
+					(unit (func (builtin_func2 (prim_add))))
+					(unit (literal (number)))
+					(unit (func (builtin_func1 (prim_sine))))
+					(unit (func (builtin_func2 (prim_multiply))))
+					(unit (func (builtin_func0 (prim_tau))))
+					(unit (func (builtin_func2 (prim_add))))
+				))
+			))
+		))
+		(unit (func (sub_ident)))
+	))
+	(line
+		(unit (macro_invk
+			(macro (macro_ident (builtin_macro1 (prim_rows))))
+			(macro_args
+				(unit (func (sub_ident)))
+			)
+		))
+		(unit (literal (number)))
+		(unit (func (builtin_func2 (prim_divide))))
+		(unit (macro_invk
+			(macro (macro_ident (builtin_macro1 (prim_on))))
+			(macro_args
+				(unit (func (builtin_func1 (prim_range))))
+			)
+		))
+		(unit (literal (number)))
+	)
+))
+

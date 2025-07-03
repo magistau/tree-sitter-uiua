@@ -8,9 +8,7 @@ Function packs
 		(builtin_macro2 (prim_fork))
 	))
 	(macro_args (pack
-		(pack_params
-			(expr (line (unit (literal (number)))))
-			(expr (line (unit (literal (number)))))
-		)
+		(expr (line (unit (literal (number)))))
+		(expr (line (unit (literal (number)))))
 	))
 )))))

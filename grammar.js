@@ -70,21 +70,25 @@ export default grammar({
 		builtin_func2: $ => seq(choice(...nameprims($, prims.func[2])), choice($.subscript, $._unsub_marker)),
 		builtin_func3: $ => seq(choice(...nameprims($, prims.func[3])), choice($.subscript, $._unsub_marker)),
 		func: $ => choice($.builtin_func0, $.builtin_func1, $.builtin_func2, $.builtin_func3, $.sub_ident),
-		unit: $ =>
+		strand: $ => sep_by2($._unit_nostrand, "_"),
+		_unit_nostrand: $ =>
 			choice(
 				$.func,
 				$.macro_invk,
 				$.literal,
-				seq("(", $.expr, ")"),
-				seq("[", $.expr, "]"),
-				seq("{", $.expr, "}"),
+				braced($.expr),
+			),
+		unit: $ =>
+			choice(
+				$.strand,
+				$._unit_nostrand,
 			),
 		pack: $ =>
 			seq(
-				choice(seq("(", $.pack_params, ")"), seq("[", $.pack_params, "]"), seq("{", $.pack_params, "}")),
+				braced($._pack_params),
 				$._macro_invk_pack_end,
 			),
-		pack_params: $ => sep_by2(optional($.expr), "|"),
+		_pack_params: $ => sep_by2(optional($.expr), "|"),
 		macro_args: $ =>
 			choice(
 				$.pack,
@@ -95,15 +99,25 @@ export default grammar({
 			),
 		macro_invk: $ => seq($.macro, $._macro_invk_marker, $.macro_args),
 		line: $ => repeat1($.unit),
-		expr: $ => seq(sep_by1($.line, $.eol), optional($.eol)),
-		eol: $ => /\r?\n/,
+		binding: $ =>
+			seq(
+				$.identifier,
+				/(↚|[←=]~?)\^?/,
+				$.line,
+			),
+		_expr_line: $ =>
+			choice(
+				$.line,
+				$.binding,
+			),
+		expr: $ => seq(sep_by1($._expr_line, $._eol), optional($._eol)),
+		_eol: $ => /\r?\n/,
 		...genprims(),
 	},
 	extras: $ => [
 		/[ \t]+/,
 		$.comment,
 	],
-	// conflicts: $ => [[$.macro, $.macro_invk]],
 	externals: $ => [
 		$._macro_invk_marker,
 		$._macro_invk_unpack_next,
@@ -113,7 +127,7 @@ export default grammar({
 		$._macro_builtin_marker2,
 		$.bangs,
 		$._unsub_marker,
-		$.error_sentinel,
+		$.__error_sentinel,
 	],
 });
 
@@ -253,4 +267,16 @@ function sep_by(tok, sep) {
 */
 function rep_at_most(tok, count) {
 	return seq(...Array(count).fill(tok).map(x => x));
+}
+
+/**
+@param {RuleOrLiteral} tok
+@returns {RuleOrLiteral}
+*/
+function braced(tok) {
+	return choice(
+		seq("(", tok, ")"),
+		seq("[", tok, "]"),
+		seq("{", tok, "}"),
+	);
 }
