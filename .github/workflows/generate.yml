@@ -12,10 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-      - uses: tree-sitter/setup-action@v2
+      - uses: cachix/install-nix-action@v31
         with:
-          install-lib: false
+          nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix-env -f '<nixpkgs>' -i redo-apenwarr uiua bun tree-sitter
+      - run: redo -xv grammar.js
+      - run: rm -rf .redo
       - run: tree-sitter init
         env:
           TREE_SITTER_JS_RUNTIME: bun

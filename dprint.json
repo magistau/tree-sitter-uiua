@@ -1,15 +1,29 @@
 {
 	"useTabs": true,
-	"typescript": {},
-	"json": {},
+	"lineWidth": 80,
+	"typescript": {
+		"preferSingleLine": true,
+		"binaryExpression.linePerExpression": true,
+		"memberExpression.linePerExpression": true,
+		"enumDeclaration.memberSpacing": "newLine",
+		"arrowFunction.useParentheses": "preferNone",
+		// "singleBodyPosition": "sameLine",
+		// "bracePosition": "sameLine",
+	},
+	"json": {
+		"jsonTrailingCommaFiles": [
+			"tsconfig.json",
+			"dprint.json",
+		],
+	},
 	"markdown": {},
 	"excludes": [
 		"**/node_modules",
-		"**/*-lock.json"
+		"**/*-lock.json",
 	],
 	"plugins": [
 		"https://plugins.dprint.dev/typescript-0.95.5.wasm",
 		"https://plugins.dprint.dev/json-0.20.0.wasm",
-		"https://plugins.dprint.dev/markdown-0.18.0.wasm"
-	]
+		"https://plugins.dprint.dev/markdown-0.18.0.wasm",
+	],
 }

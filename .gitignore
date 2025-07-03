@@ -1,3 +1,5 @@
+*.tsbuildinfo
+
 Cargo.*
 CMakeLists.txt
 Makefile
@@ -16,3 +18,4 @@ package.json
 
 prims.json
 primitives.json
+grammar.js
