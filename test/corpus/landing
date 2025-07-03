@@ -195,7 +195,7 @@ floor*10repeatrand5
 			(macro_args
 				(unit (func (builtin_func0 (prim_random))))
 			)
-		)
+		))
 		(unit (literal (number)))
 	))
 )

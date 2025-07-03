@@ -6,11 +6,7 @@
 /// <reference types="tree-sitter-cli/dsl" />
 
 import prims from "./prims.json";
-const prim_precs: Record<string, number> = {
-	range: 1,
-	partition: 1,
-	select: 1,
-};
+const prim_precs: Record<string, number> = { range: 1, partition: 1, select: 1 };
 
 export default grammar({
 	name: "uiua",
@@ -20,10 +16,8 @@ export default grammar({
 		literal: $ => choice($.string, $.number),
 		number: $ => choice($._decimal),
 		_decimal: _ => /[`¯]?[0-9]+(?:\.[0-9]+)?(?:[eE][`¯-]?[0-9]+)?/,
-		string: $ =>
-			seq("\"", repeat(choice($._escape_sequence, $._string_content)), "\""),
-		_string_content: _ =>
-			/[^\\"\n]+/,
+		string: $ => seq("\"", repeat(choice($._escape_sequence, $._string_content)), "\""),
+		_string_content: _ => /[^\\"\n]+/,
 		_escape_sequence: _ =>
 			token.immediate(
 				seq(
@@ -46,24 +40,12 @@ export default grammar({
 		macro: $ => $.macro_ident,
 		func: $ => choice($._builtin_func, $.sub_ident),
 		strand: $ => sep_by2($._unit_nostrand, "_"),
-		_unit_nostrand: $ =>
-			choice(
-				$.func,
-				$.macro_invk,
-				$.literal,
-				braced($.expr),
-			),
+		_unit_nostrand: $ => choice($.func, $.macro_invk, $.literal, braced($.expr)),
 		unit: $ => choice($.strand, $._unit_nostrand),
 		pack: $ => seq(braced($._pack_params), $._macro_invk_pack_end),
 		_pack_params: $ => sep_by2(optional($.expr), "|"),
 		macro_args: $ =>
-			choice(
-				$.pack,
-				seq(
-					repeat(seq($.unit, $._macro_invk_unpack_next)),
-					$._macro_invk_unpack_end,
-				),
-			),
+			choice($.pack, seq(repeat(seq($.unit, $._macro_invk_unpack_next)), $._macro_invk_unpack_end)),
 		macro_invk: $ => seq($.macro, $._macro_invk_marker, $.macro_args),
 		line: $ => repeat1($.unit),
 		binding: $ => seq($.identifier, /(↚|[←=]~?)\^?/, $.line),
@@ -87,9 +69,7 @@ export default grammar({
 });
 
 type Primitive = { name: string; ascii?: string; glyph?: string };
-function fromprim(
-	{ name, ascii = undefined, glyph = undefined }: Primitive,
-): RuleOrLiteral {
+function fromprim({ name, ascii = undefined, glyph = undefined }: Primitive): RuleOrLiteral {
 	let opts = [];
 	if (ascii !== undefined) {
 		opts.push(ascii);
@@ -133,10 +113,7 @@ function genprims(): RuleBuilders<string, never> {
 					arr.length == 0
 						? []
 						: [[`builtin_${kind}${arity}`, $ =>
-							seq(
-								choice(...nameprims($, arr)),
-								choice($.subscript, $._unsub_marker),
-							)]]
+							seq(choice(...nameprims($, arr)), choice($.subscript, $._unsub_marker))]]
 				);
 			}),
 		),
@@ -144,16 +121,9 @@ function genprims(): RuleBuilders<string, never> {
 			choice(...prims.macro.flatMap((arr, arity) =>
 				arr.length == 0
 					? []
-					: [
-						seq($[`builtin_macro${arity}`], $[`_macro_builtin_marker${arity}`]),
-					]
+					: [seq($[`builtin_macro${arity}`], $[`_macro_builtin_marker${arity}`])]
 			)),
-		_builtin_func: $ =>
-			choice(...prims
-				.func
-				.map((_, arity) =>
-					$[`builtin_func${arity}`]
-				)),
+		_builtin_func: $ => choice(...prims.func.map((_, arity) => $[`builtin_func${arity}`])),
 	};
 }
 
