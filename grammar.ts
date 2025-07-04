@@ -5,8 +5,14 @@
  */
 /// <reference types="tree-sitter-cli/dsl" />
 
-import prims from "./prims.json";
-const prim_precs: Record<string, number> = { range: 1, partition: 1, select: 1 };
+import _prim_list from "./primitives.json";
+import _prims from "./prims.json";
+type PrimitiveName = keyof typeof _prim_list;
+type Primitive = { name: PrimitiveName, ascii?: string, glyph?: string };
+type Prims = { func: Primitive[][], macro: Primitive[][] };
+const prims = _prims as Prims;
+const prim_min: Partial<Record<PrimitiveName, number>> = { random: 4, parse: 4, self: 4 };
+const prim_aliases: Partial<Record<PrimitiveName, string[]>> = {};
 
 export default grammar({
 	name: "uiua",
@@ -31,7 +37,7 @@ export default grammar({
 					),
 				),
 			),
-		_bare_ident: _ => choice(re`&?[\p{Alphabetic}--ⁿₙₑℂ]+`, "&"),
+		_bare_ident: _ => re`&|&?[\p{Alphabetic}--ⁿₙₑℂ]+`,
 		subscript: _ => /(?:[⌞⌟₋₀-₉]+|(?:,|__)[`¯]?[0-9]*[<>]?[0-9]*)+/,
 		sub_ident: $ => seq($._bare_ident, choice($.subscript, $._unsub_marker)),
 		identifier: $ => choice($.sub_ident, $.macro_ident_noargs),
@@ -68,7 +74,6 @@ export default grammar({
 	],
 });
 
-type Primitive = { name: string; ascii?: string; glyph?: string };
 function fromprim({ name, ascii = undefined, glyph = undefined }: Primitive): RuleOrLiteral {
 	let opts = [];
 	if (ascii !== undefined) {
@@ -80,12 +85,10 @@ function fromprim({ name, ascii = undefined, glyph = undefined }: Primitive): Ru
 	if (!name.includes(" ") && (ascii !== undefined || glyph !== undefined)) {
 		opts.push(shorts(name));
 	}
-	let res: RuleOrLiteral = choice(...opts);
-	let pr = prim_precs[name];
-	if (pr !== undefined) {
-		res = token(prec(pr, res));
+	if (prim_aliases[name] !== undefined) {
+		opts.push(choice(...prim_aliases[name]));
 	}
-	return res;
+	return choice(...opts);
 }
 
 function nameprims<RuleName extends string>(
@@ -95,7 +98,7 @@ function nameprims<RuleName extends string>(
 	return names.map(x => $[_primname(x.name)]);
 }
 
-function _primname(name: string): string {
+function _primname(name: PrimitiveName): string {
 	return `prim_${name.replace(" ", "_")}`;
 }
 
@@ -127,12 +130,16 @@ function genprims(): RuleBuilders<string, never> {
 	};
 }
 
-function shorts(name: string): RuleOrLiteral {
-	if (name.length <= 3 || name[0] === "&") {
+function shorts(name: PrimitiveName): RuleOrLiteral {
+	let threshold = prim_min[name];
+	if (threshold === undefined) {
+		threshold = 3;
+	}
+	if (name.length <= threshold || name[0] === "&") {
 		return name;
 	} else {
 		let res = [];
-		for (let i = 3; i <= name.length; ++i) {
+		for (let i = threshold; i <= name.length; ++i) {
 			res.push(name.slice(0, i));
 		}
 		return choice(...res);

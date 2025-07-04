@@ -1,6 +1,0 @@
-#!/bin/sh
-FILENAME="$1"
-INDENT_WIDTH="$2"
-USE_TABS="$3"
-LINE_WIDTH="$4"
-exec clang-format --assume-filename="$FILENAME" --style="{TabWidth: $INDENT_WIDTH, ConstructorInitializerIndentWidth: $INDENT_WIDTH, ContinuationIndentWidth: $INDENT_WIDTH, IndentWidth: $INDENT_WIDTH, UseTab: $USE_TABS, ColumnLimit: $LINE_WIDTH, BasedOnStyle: InheritParentConfig}"

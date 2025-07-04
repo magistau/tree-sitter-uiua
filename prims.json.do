@@ -1,4 +1,4 @@
-#!/usr/bin/env uiua run
+#!/usr/bin/env uiua run --no-format
 ⊃(°json&fras|°0&runi□₂"redo-ifchange") "./primitives.json"
 ⍚(insert"name") °map
 ⊕□ ⊸≡◇(has"modifier_args")

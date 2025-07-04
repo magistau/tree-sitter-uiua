@@ -13,6 +13,8 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
       - run: nix-env -f '<nixpkgs>' -i redo-apenwarr uiua bun tree-sitter typescript dprint
+      - run: redo -xv package.json
+      - run: bun install --ignore-scripts
       - run: redo -xv check
         env:
           TREE_SITTER_JS_RUNTIME: bun

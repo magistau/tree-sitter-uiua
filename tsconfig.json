@@ -7,5 +7,5 @@
 		"skipLibCheck": true,
 		"moduleResolution": "bundler",
 	},
-	"files": ["./grammar.ts", "./prims.json"],
+	"files": ["./grammar.ts", "./prims.json", "./primitives.json"],
 }

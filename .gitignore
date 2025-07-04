@@ -19,3 +19,4 @@ package.json
 prims.json
 primitives.json
 grammar.js
+src/token.h

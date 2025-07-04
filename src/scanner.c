@@ -5,24 +5,14 @@
 #include <string.h>
 
 #define NOPRINT
+#include "token.h"
+
 #ifdef NOPRINT
 	#define printf(...)
 #endif
 #define UNREACHABLE(reason) printf("%s:%d: Unreachable (%s)", __FILE__, __LINE__, (reason))
 
 typedef uint8_t Arity;
-
-enum TokenType {
-	MACRO_INVK_MARKER,
-	MACRO_INVK_UNPACK_NEXT,
-	MACRO_INVK_UNPACK_END,
-	MACRO_INVK_PACK_END,
-	MACRO_BUILTIN_MARKER1,
-	MACRO_BUILTIN_MARKER2,
-	BANGS,
-	UNSUB_MARKER,
-	ERROR_SENTINEL,
-};
 
 typedef struct {
 	Array(Arity) macro_args;
@@ -131,33 +121,7 @@ bool tree_sitter_uiua_external_scanner_scan(
 ) {
 	printf("Column: %d, lookahead: %X\n", lexer->get_column(lexer), lexer->lookahead);
 	show_scanner(scanner);
-	if (valid_symbols[MACRO_INVK_MARKER]) {
-		printf("MACRO_INVK_MARKER\n");
-	}
-	if (valid_symbols[MACRO_INVK_UNPACK_NEXT]) {
-		printf("MACRO_INVK_UNPACK_NEXT\n");
-	}
-	if (valid_symbols[MACRO_INVK_UNPACK_END]) {
-		printf("MACRO_INVK_UNPACK_END\n");
-	}
-	if (valid_symbols[MACRO_INVK_PACK_END]) {
-		printf("MACRO_INVK_PACK_END\n");
-	}
-	if (valid_symbols[MACRO_BUILTIN_MARKER1]) {
-		printf("MACRO_BUILTIN_MARKER1\n");
-	}
-	if (valid_symbols[MACRO_BUILTIN_MARKER2]) {
-		printf("MACRO_BUILTIN_MARKER2\n");
-	}
-	if (valid_symbols[BANGS]) {
-		printf("BANGS\n");
-	}
-	if (valid_symbols[UNSUB_MARKER]) {
-		printf("UNSUB_MARKER\n");
-	}
-	if (valid_symbols[ERROR_SENTINEL]) {
-		printf("ERROR_SENTINEL\n");
-	}
+	show_valid(valid_symbols);
 	if (valid_symbols[ERROR_SENTINEL]) {
 		return false;
 	}
