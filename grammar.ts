@@ -37,7 +37,8 @@ export default grammar({
 					),
 				),
 			),
-		_bare_ident: _ => re`&|&?[\p{Alphabetic}--ⁿₙₑℂ]+`,
+		// TODO: allow lowercase initial characters
+		_bare_ident: _ => re`[&\p{Alphabetic}--ⁿₙₑℂa-z][\p{Alphabetic}--ⁿₙₑℂ]*`,
 		subscript: _ => /(?:[⌞⌟₋₀-₉]+|(?:,|__)[`¯]?[0-9]*[<>]?[0-9]*)+/,
 		sub_ident: $ => seq($._bare_ident, choice($.subscript, $._unsub_marker)),
 		identifier: $ => choice($.sub_ident, $.macro_ident_noargs),
