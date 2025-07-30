@@ -20,6 +20,11 @@
       perSystem =
         { pkgs, inputs', ... }:
         {
+          devShells.default = pkgs.mkShell {
+            packages = [
+              inputs'.uiua.packages.default
+            ];
+          };
           devShells.github = pkgs.mkShell {
             env.TREE_SITTER_JS_RUNTIME = "bun";
             packages = with pkgs; [

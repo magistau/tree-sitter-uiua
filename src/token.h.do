@@ -1,18 +1,26 @@
 #!/usr/bin/env uiua run --no-format
-# ┌─╴Primitive
-#   ~ {Name Glyphs}
-#   TokenName ← ⊂"PRIM_"⍜⊏≡⋅@_⊚⊸=@\s⍜⊢(⍥⋅@_⊸=@&)⌵Name
-#   HasGlyph  ← ≠₀⧻Glyphs
-#   MinLen    ← ˜⊡3_4 ∊{"random" "parse" "self"} □Name
-#   AllNames ← (
-#     ⨬(Name|▽≥⊃(MinLen|⊸≡◇⧻◇⧅□Name))⊸HasGlyph
-#   )
-# └─╴
-# Test           ← 1
-# Redo           ← ⨬"mole""redo-ifchange" ¬Test
-# Primitives     ← memo(⊃(°json&fras|°0&runi□₂Redo) "../primitives.json")
-# Rename         ← ⍜⊏≡⋅@_⊚⊸=@\s⍜⊢(⍥⋅@_⊸=@&)⌵
-# PrimitiveNames ← ≡◇Primitive⊙⍚(◴get⍜?▽◡≡⌟has{"glyph" "ascii"})°mapPrimitives
+
+# Make empty arrays have the needed type
+# because Uiua loves erasing empty array types
+As₀ ↚ ⍥⋅[]=₀⊸⧻
+As₁ ↚ ⍥⋅""=₀⊸⧻
+As₂ ↚ ⍥⋅{}=₀⊸⧻
+As₃ ↚ ⍥⋅(≡˙ℂ[])=₀⊸⧻
+┌─╴Primitive
+  ~ {Name Glyphs}
+  TokenName ← ⊂"PRIM_"⍜⊏≡⋅@_⊚⊸=@\s⍜⊢(⍥⋅@_⊸=@&)⌵Name
+  HasGlyph  ← ≠₀⧻Glyphs
+  # MinLen    ← ↧ ˜⊡3_4 ∊{"random" "parse" "self"} ⊃□⧻ Name
+  MinLen ← ↧ ˜⊡3_4 ∊{} ⊃□⧻ Name
+  AllNames ← (
+    ⨬({Name}|▽≥⊃(MinLen|⊸≡◇⧻◇⧅□↙⊸⊗@\sName))⊸HasGlyph
+  )
+└─╴
+Test           ← 0
+Redo           ← ⨬"mole""redo-ifchange" ¬Test
+Primitives     ← memo(⊃(°json&fras|°0&runi□₂Redo) "../primitives.json")
+Rename         ← ⍜⊏≡⋅@_⊚⊸=@\s⍜⊢(⍥⋅@_⊸=@&)⌵
+PrimitiveNames ← ≡◇Primitive⊙⍚(◴get▽◡≡⌟has{"glyph" "ascii"})°mapPrimitives
 Tokens ← (
   {
     "MACRO_INVK_MARKER"
@@ -25,7 +33,7 @@ Tokens ← (
     "UNSUB_MARKER"
     "ERROR_SENTINEL"
   }
-  # ˜⊂⍚Primitive~TokenName PrimitiveNames
+  ˜⊂⍚Primitive~TokenName PrimitiveNames
 )
 {$ #include <stdio.h>
  $ #ifdef NOPRINT
@@ -42,4 +50,4 @@ Tokens ← (
  $ }
 }
 &p/◇⊂
-# ⍥(⍚Primitive~AllNames PrimitiveNames)Test
+(▽>₁⊕⊃⧻⊢⊸⊛⊸/◇⊂⍚Primitive~AllNames PrimitiveNames)
