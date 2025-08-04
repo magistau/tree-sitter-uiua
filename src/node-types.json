@@ -1,0 +1,4452 @@
+[
+  {
+    "type": "binding",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "line",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "builtin_func0",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "prim_&args",
+          "named": true
+        },
+        {
+          "type": "prim_&asr",
+          "named": true
+        },
+        {
+          "type": "prim_&b",
+          "named": true
+        },
+        {
+          "type": "prim_&clip",
+          "named": true
+        },
+        {
+          "type": "prim_&sc",
+          "named": true
+        },
+        {
+          "type": "prim_&ts",
+          "named": true
+        },
+        {
+          "type": "prim_arch",
+          "named": true
+        },
+        {
+          "type": "prim_dllext",
+          "named": true
+        },
+        {
+          "type": "prim_eta",
+          "named": true
+        },
+        {
+          "type": "prim_exeext",
+          "named": true
+        },
+        {
+          "type": "prim_infinity",
+          "named": true
+        },
+        {
+          "type": "prim_now",
+          "named": true
+        },
+        {
+          "type": "prim_numprocs",
+          "named": true
+        },
+        {
+          "type": "prim_os",
+          "named": true
+        },
+        {
+          "type": "prim_osfamily",
+          "named": true
+        },
+        {
+          "type": "prim_pathsep",
+          "named": true
+        },
+        {
+          "type": "prim_pi",
+          "named": true
+        },
+        {
+          "type": "prim_random",
+          "named": true
+        },
+        {
+          "type": "prim_stack",
+          "named": true
+        },
+        {
+          "type": "prim_tag",
+          "named": true
+        },
+        {
+          "type": "prim_tau",
+          "named": true
+        },
+        {
+          "type": "prim_timezone",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "builtin_func1",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "prim_&ap",
+          "named": true
+        },
+        {
+          "type": "prim_&camcap",
+          "named": true
+        },
+        {
+          "type": "prim_&cd",
+          "named": true
+        },
+        {
+          "type": "prim_&cl",
+          "named": true
+        },
+        {
+          "type": "prim_&ep",
+          "named": true
+        },
+        {
+          "type": "prim_&epf",
+          "named": true
+        },
+        {
+          "type": "prim_&exit",
+          "named": true
+        },
+        {
+          "type": "prim_&fc",
+          "named": true
+        },
+        {
+          "type": "prim_&fde",
+          "named": true
+        },
+        {
+          "type": "prim_&fe",
+          "named": true
+        },
+        {
+          "type": "prim_&fif",
+          "named": true
+        },
+        {
+          "type": "prim_&fld",
+          "named": true
+        },
+        {
+          "type": "prim_&fmd",
+          "named": true
+        },
+        {
+          "type": "prim_&fo",
+          "named": true
+        },
+        {
+          "type": "prim_&frab",
+          "named": true
+        },
+        {
+          "type": "prim_&fras",
+          "named": true
+        },
+        {
+          "type": "prim_&ftr",
+          "named": true
+        },
+        {
+          "type": "prim_&ims",
+          "named": true
+        },
+        {
+          "type": "prim_&invk",
+          "named": true
+        },
+        {
+          "type": "prim_&memfree",
+          "named": true
+        },
+        {
+          "type": "prim_&p",
+          "named": true
+        },
+        {
+          "type": "prim_&pf",
+          "named": true
+        },
+        {
+          "type": "prim_&raw",
+          "named": true
+        },
+        {
+          "type": "prim_&runc",
+          "named": true
+        },
+        {
+          "type": "prim_&runi",
+          "named": true
+        },
+        {
+          "type": "prim_&runs",
+          "named": true
+        },
+        {
+          "type": "prim_&s",
+          "named": true
+        },
+        {
+          "type": "prim_&sl",
+          "named": true
+        },
+        {
+          "type": "prim_&tcpa",
+          "named": true
+        },
+        {
+          "type": "prim_&tcpaddr",
+          "named": true
+        },
+        {
+          "type": "prim_&tcpc",
+          "named": true
+        },
+        {
+          "type": "prim_&tcpl",
+          "named": true
+        },
+        {
+          "type": "prim_&tcpsnb",
+          "named": true
+        },
+        {
+          "type": "prim_&tlsc",
+          "named": true
+        },
+        {
+          "type": "prim_&var",
+          "named": true
+        },
+        {
+          "type": "prim_absolute_value",
+          "named": true
+        },
+        {
+          "type": "prim_binary",
+          "named": true
+        },
+        {
+          "type": "prim_bits",
+          "named": true
+        },
+        {
+          "type": "prim_box",
+          "named": true
+        },
+        {
+          "type": "prim_ceiling",
+          "named": true
+        },
+        {
+          "type": "prim_classify",
+          "named": true
+        },
+        {
+          "type": "prim_csv",
+          "named": true
+        },
+        {
+          "type": "prim_datetime",
+          "named": true
+        },
+        {
+          "type": "prim_deduplicate",
+          "named": true
+        },
+        {
+          "type": "prim_deshape",
+          "named": true
+        },
+        {
+          "type": "prim_duplicate",
+          "named": true
+        },
+        {
+          "type": "prim_fall",
+          "named": true
+        },
+        {
+          "type": "prim_fft",
+          "named": true
+        },
+        {
+          "type": "prim_first",
+          "named": true
+        },
+        {
+          "type": "prim_fix",
+          "named": true
+        },
+        {
+          "type": "prim_floor",
+          "named": true
+        },
+        {
+          "type": "prim_graphemes",
+          "named": true
+        },
+        {
+          "type": "prim_hsv",
+          "named": true
+        },
+        {
+          "type": "prim_identity",
+          "named": true
+        },
+        {
+          "type": "prim_json",
+          "named": true
+        },
+        {
+          "type": "prim_last",
+          "named": true
+        },
+        {
+          "type": "prim_length",
+          "named": true
+        },
+        {
+          "type": "prim_ln",
+          "named": true
+        },
+        {
+          "type": "prim_negate",
+          "named": true
+        },
+        {
+          "type": "prim_not",
+          "named": true
+        },
+        {
+          "type": "prim_occurrences",
+          "named": true
+        },
+        {
+          "type": "prim_parse",
+          "named": true
+        },
+        {
+          "type": "prim_pop",
+          "named": true
+        },
+        {
+          "type": "prim_pretty",
+          "named": true
+        },
+        {
+          "type": "prim_range",
+          "named": true
+        },
+        {
+          "type": "prim_recv",
+          "named": true
+        },
+        {
+          "type": "prim_repr",
+          "named": true
+        },
+        {
+          "type": "prim_reverse",
+          "named": true
+        },
+        {
+          "type": "prim_rise",
+          "named": true
+        },
+        {
+          "type": "prim_round",
+          "named": true
+        },
+        {
+          "type": "prim_shape",
+          "named": true
+        },
+        {
+          "type": "prim_sign",
+          "named": true
+        },
+        {
+          "type": "prim_sine",
+          "named": true
+        },
+        {
+          "type": "prim_sort",
+          "named": true
+        },
+        {
+          "type": "prim_sqrt",
+          "named": true
+        },
+        {
+          "type": "prim_transpose",
+          "named": true
+        },
+        {
+          "type": "prim_tryrecv",
+          "named": true
+        },
+        {
+          "type": "prim_type",
+          "named": true
+        },
+        {
+          "type": "prim_unique",
+          "named": true
+        },
+        {
+          "type": "prim_utf₈",
+          "named": true
+        },
+        {
+          "type": "prim_voxels",
+          "named": true
+        },
+        {
+          "type": "prim_wait",
+          "named": true
+        },
+        {
+          "type": "prim_where",
+          "named": true
+        },
+        {
+          "type": "prim_xlsx",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "builtin_func2",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "prim_&apngs",
+          "named": true
+        },
+        {
+          "type": "prim_&ffi",
+          "named": true
+        },
+        {
+          "type": "prim_&fwa",
+          "named": true
+        },
+        {
+          "type": "prim_&gifs",
+          "named": true
+        },
+        {
+          "type": "prim_&rb",
+          "named": true
+        },
+        {
+          "type": "prim_&rs",
+          "named": true
+        },
+        {
+          "type": "prim_&ru",
+          "named": true
+        },
+        {
+          "type": "prim_&tcpsrt",
+          "named": true
+        },
+        {
+          "type": "prim_&tcpswt",
+          "named": true
+        },
+        {
+          "type": "prim_&w",
+          "named": true
+        },
+        {
+          "type": "prim_add",
+          "named": true
+        },
+        {
+          "type": "prim_apng",
+          "named": true
+        },
+        {
+          "type": "prim_assert",
+          "named": true
+        },
+        {
+          "type": "prim_atangent",
+          "named": true
+        },
+        {
+          "type": "prim_base",
+          "named": true
+        },
+        {
+          "type": "prim_bytes",
+          "named": true
+        },
+        {
+          "type": "prim_complex",
+          "named": true
+        },
+        {
+          "type": "prim_couple",
+          "named": true
+        },
+        {
+          "type": "prim_divide",
+          "named": true
+        },
+        {
+          "type": "prim_drop",
+          "named": true
+        },
+        {
+          "type": "prim_equals",
+          "named": true
+        },
+        {
+          "type": "prim_find",
+          "named": true
+        },
+        {
+          "type": "prim_flip",
+          "named": true
+        },
+        {
+          "type": "prim_gen",
+          "named": true
+        },
+        {
+          "type": "prim_get",
+          "named": true
+        },
+        {
+          "type": "prim_gif",
+          "named": true
+        },
+        {
+          "type": "prim_greater_or equal",
+          "named": true
+        },
+        {
+          "type": "prim_greater_than",
+          "named": true
+        },
+        {
+          "type": "prim_has",
+          "named": true
+        },
+        {
+          "type": "prim_img",
+          "named": true
+        },
+        {
+          "type": "prim_indexof",
+          "named": true
+        },
+        {
+          "type": "prim_join",
+          "named": true
+        },
+        {
+          "type": "prim_keep",
+          "named": true
+        },
+        {
+          "type": "prim_layout",
+          "named": true
+        },
+        {
+          "type": "prim_less_or equal",
+          "named": true
+        },
+        {
+          "type": "prim_less_than",
+          "named": true
+        },
+        {
+          "type": "prim_logarithm",
+          "named": true
+        },
+        {
+          "type": "prim_map",
+          "named": true
+        },
+        {
+          "type": "prim_mask",
+          "named": true
+        },
+        {
+          "type": "prim_match",
+          "named": true
+        },
+        {
+          "type": "prim_maximum",
+          "named": true
+        },
+        {
+          "type": "prim_memberof",
+          "named": true
+        },
+        {
+          "type": "prim_minimum",
+          "named": true
+        },
+        {
+          "type": "prim_modulus",
+          "named": true
+        },
+        {
+          "type": "prim_multiply",
+          "named": true
+        },
+        {
+          "type": "prim_not_equals",
+          "named": true
+        },
+        {
+          "type": "prim_or",
+          "named": true
+        },
+        {
+          "type": "prim_orient",
+          "named": true
+        },
+        {
+          "type": "prim_pick",
+          "named": true
+        },
+        {
+          "type": "prim_power",
+          "named": true
+        },
+        {
+          "type": "prim_progressive_indexof",
+          "named": true
+        },
+        {
+          "type": "prim_regex",
+          "named": true
+        },
+        {
+          "type": "prim_remove",
+          "named": true
+        },
+        {
+          "type": "prim_rerank",
+          "named": true
+        },
+        {
+          "type": "prim_reshape",
+          "named": true
+        },
+        {
+          "type": "prim_rotate",
+          "named": true
+        },
+        {
+          "type": "prim_select",
+          "named": true
+        },
+        {
+          "type": "prim_send",
+          "named": true
+        },
+        {
+          "type": "prim_subtract",
+          "named": true
+        },
+        {
+          "type": "prim_take",
+          "named": true
+        },
+        {
+          "type": "prim_windows",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "builtin_func3",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "prim_&memcpy",
+          "named": true
+        },
+        {
+          "type": "prim_&tlsl",
+          "named": true
+        },
+        {
+          "type": "prim_audio",
+          "named": true
+        },
+        {
+          "type": "prim_insert",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "builtin_macro1",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "prim_&ast",
+          "named": true
+        },
+        {
+          "type": "prim_&rl",
+          "named": true
+        },
+        {
+          "type": "prim_above",
+          "named": true
+        },
+        {
+          "type": "prim_anti",
+          "named": true
+        },
+        {
+          "type": "prim_backward",
+          "named": true
+        },
+        {
+          "type": "prim_below",
+          "named": true
+        },
+        {
+          "type": "prim_both",
+          "named": true
+        },
+        {
+          "type": "prim_by",
+          "named": true
+        },
+        {
+          "type": "prim_case",
+          "named": true
+        },
+        {
+          "type": "prim_comptime",
+          "named": true
+        },
+        {
+          "type": "prim_content",
+          "named": true
+        },
+        {
+          "type": "prim_derivative",
+          "named": true
+        },
+        {
+          "type": "prim_dip",
+          "named": true
+        },
+        {
+          "type": "prim_dump",
+          "named": true
+        },
+        {
+          "type": "prim_each",
+          "named": true
+        },
+        {
+          "type": "prim_evert",
+          "named": true
+        },
+        {
+          "type": "prim_fold",
+          "named": true
+        },
+        {
+          "type": "prim_gap",
+          "named": true
+        },
+        {
+          "type": "prim_geometric",
+          "named": true
+        },
+        {
+          "type": "prim_group",
+          "named": true
+        },
+        {
+          "type": "prim_integral",
+          "named": true
+        },
+        {
+          "type": "prim_inventory",
+          "named": true
+        },
+        {
+          "type": "prim_memo",
+          "named": true
+        },
+        {
+          "type": "prim_obverse",
+          "named": true
+        },
+        {
+          "type": "prim_off",
+          "named": true
+        },
+        {
+          "type": "prim_on",
+          "named": true
+        },
+        {
+          "type": "prim_partition",
+          "named": true
+        },
+        {
+          "type": "prim_pool",
+          "named": true
+        },
+        {
+          "type": "prim_quote",
+          "named": true
+        },
+        {
+          "type": "prim_reach",
+          "named": true
+        },
+        {
+          "type": "prim_reduce",
+          "named": true
+        },
+        {
+          "type": "prim_repeat",
+          "named": true
+        },
+        {
+          "type": "prim_rows",
+          "named": true
+        },
+        {
+          "type": "prim_scan",
+          "named": true
+        },
+        {
+          "type": "prim_self",
+          "named": true
+        },
+        {
+          "type": "prim_spawn",
+          "named": true
+        },
+        {
+          "type": "prim_stencil",
+          "named": true
+        },
+        {
+          "type": "prim_table",
+          "named": true
+        },
+        {
+          "type": "prim_tuples",
+          "named": true
+        },
+        {
+          "type": "prim_un",
+          "named": true
+        },
+        {
+          "type": "prim_with",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "builtin_macro2",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "prim_bracket",
+          "named": true
+        },
+        {
+          "type": "prim_do",
+          "named": true
+        },
+        {
+          "type": "prim_fill",
+          "named": true
+        },
+        {
+          "type": "prim_fork",
+          "named": true
+        },
+        {
+          "type": "prim_path",
+          "named": true
+        },
+        {
+          "type": "prim_switch",
+          "named": true
+        },
+        {
+          "type": "prim_try",
+          "named": true
+        },
+        {
+          "type": "prim_under",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "binding",
+          "named": true
+        },
+        {
+          "type": "line",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "func",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "builtin_func0",
+          "named": true
+        },
+        {
+          "type": "builtin_func1",
+          "named": true
+        },
+        {
+          "type": "builtin_func2",
+          "named": true
+        },
+        {
+          "type": "builtin_func3",
+          "named": true
+        },
+        {
+          "type": "sub_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "macro_ident_noargs",
+          "named": true
+        },
+        {
+          "type": "sub_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "unit",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "literal",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macro",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "macro_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macro_args",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "pack",
+          "named": true
+        },
+        {
+          "type": "unit",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macro_ident",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "bangs",
+          "named": true
+        },
+        {
+          "type": "builtin_macro1",
+          "named": true
+        },
+        {
+          "type": "builtin_macro2",
+          "named": true
+        },
+        {
+          "type": "sub_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macro_ident_noargs",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "macro_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macro_invk",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "macro",
+          "named": true
+        },
+        {
+          "type": "macro_args",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "number",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pack",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "prim_&ap",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&apngs",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&args",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&asr",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&ast",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&b",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&camcap",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&cd",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&cl",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&clip",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&ep",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&epf",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&exit",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fc",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fde",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fe",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&ffi",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fif",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fld",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fmd",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fo",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&frab",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fras",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&ftr",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&fwa",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&gifs",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&ims",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&invk",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&memcpy",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&memfree",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&p",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&pf",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&raw",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&rb",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&rl",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&rs",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&ru",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&runc",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&runi",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&runs",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&s",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&sc",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&sl",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tcpa",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tcpaddr",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tcpc",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tcpl",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tcpsnb",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tcpsrt",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tcpswt",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tlsc",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&tlsl",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&ts",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&var",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_&w",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_above",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_absolute_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_add",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_anti",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_apng",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_arch",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_assert",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_atangent",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_audio",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_backward",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_base",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_below",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_binary",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_bits",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_both",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_box",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_bracket",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_by",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_bytes",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_case",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_ceiling",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_classify",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_complex",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_comptime",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_content",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_couple",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_csv",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_datetime",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_deduplicate",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_derivative",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_deshape",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_dip",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_divide",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_dllext",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_do",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_drop",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_dump",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_duplicate",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_each",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_equals",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_eta",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_evert",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_exeext",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_fall",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_fft",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_fill",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_find",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_first",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_fix",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_flip",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_floor",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_fold",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_fork",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_gap",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_gen",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_geometric",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_get",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_gif",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_graphemes",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_greater_or equal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_greater_than",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_group",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_has",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_hsv",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_identity",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_img",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_indexof",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_infinity",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_insert",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_integral",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_inventory",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_join",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_json",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_keep",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_last",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_layout",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_length",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_less_or equal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_less_than",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_ln",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_logarithm",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_map",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_mask",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_match",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_maximum",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_memberof",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_memo",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_minimum",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_modulus",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_multiply",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_negate",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_not",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_not_equals",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_now",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_numprocs",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_obverse",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_occurrences",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_off",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_on",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_or",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_orient",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_os",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_osfamily",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_parse",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_partition",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_path",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_pathsep",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_pi",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_pick",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_pool",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_pop",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_power",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_pretty",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_progressive_indexof",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_quote",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_random",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_range",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_reach",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_recv",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_reduce",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_regex",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_remove",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_repeat",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_repr",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_rerank",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_reshape",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_reverse",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_rise",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_rotate",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_round",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_rows",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_scan",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_select",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_self",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_send",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_shape",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_sign",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_sine",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_sort",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_spawn",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_sqrt",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_stack",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_stencil",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_subtract",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_switch",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_table",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_tag",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_take",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_tau",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_timezone",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_transpose",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_try",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_tryrecv",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_tuples",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_un",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_under",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_unique",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_utf₈",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_voxels",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_wait",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_where",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_windows",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_with",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prim_xlsx",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "strand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "func",
+          "named": true
+        },
+        {
+          "type": "literal",
+          "named": true
+        },
+        {
+          "type": "macro_invk",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "sub_ident",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "subscript",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unit",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "func",
+          "named": true
+        },
+        {
+          "type": "literal",
+          "named": true
+        },
+        {
+          "type": "macro_invk",
+          "named": true
+        },
+        {
+          "type": "strand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!=",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "%",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": "?",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "\\",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "_",
+    "named": false
+  },
+  {
+    "type": "`",
+    "named": false
+  },
+  {
+    "type": "abo",
+    "named": false
+  },
+  {
+    "type": "abov",
+    "named": false
+  },
+  {
+    "type": "above",
+    "named": false
+  },
+  {
+    "type": "add",
+    "named": false
+  },
+  {
+    "type": "ant",
+    "named": false
+  },
+  {
+    "type": "anti",
+    "named": false
+  },
+  {
+    "type": "ass",
+    "named": false
+  },
+  {
+    "type": "asse",
+    "named": false
+  },
+  {
+    "type": "asser",
+    "named": false
+  },
+  {
+    "type": "assert",
+    "named": false
+  },
+  {
+    "type": "ata",
+    "named": false
+  },
+  {
+    "type": "atan",
+    "named": false
+  },
+  {
+    "type": "atang",
+    "named": false
+  },
+  {
+    "type": "atange",
+    "named": false
+  },
+  {
+    "type": "atangen",
+    "named": false
+  },
+  {
+    "type": "atangent",
+    "named": false
+  },
+  {
+    "type": "bac",
+    "named": false
+  },
+  {
+    "type": "back",
+    "named": false
+  },
+  {
+    "type": "backw",
+    "named": false
+  },
+  {
+    "type": "backwa",
+    "named": false
+  },
+  {
+    "type": "backwar",
+    "named": false
+  },
+  {
+    "type": "backward",
+    "named": false
+  },
+  {
+    "type": "bangs",
+    "named": true
+  },
+  {
+    "type": "bas",
+    "named": false
+  },
+  {
+    "type": "base",
+    "named": false
+  },
+  {
+    "type": "bel",
+    "named": false
+  },
+  {
+    "type": "belo",
+    "named": false
+  },
+  {
+    "type": "below",
+    "named": false
+  },
+  {
+    "type": "bit",
+    "named": false
+  },
+  {
+    "type": "bits",
+    "named": false
+  },
+  {
+    "type": "bot",
+    "named": false
+  },
+  {
+    "type": "both",
+    "named": false
+  },
+  {
+    "type": "box",
+    "named": false
+  },
+  {
+    "type": "bra",
+    "named": false
+  },
+  {
+    "type": "brac",
+    "named": false
+  },
+  {
+    "type": "brack",
+    "named": false
+  },
+  {
+    "type": "bracke",
+    "named": false
+  },
+  {
+    "type": "bracket",
+    "named": false
+  },
+  {
+    "type": "by",
+    "named": false
+  },
+  {
+    "type": "cas",
+    "named": false
+  },
+  {
+    "type": "case",
+    "named": false
+  },
+  {
+    "type": "cei",
+    "named": false
+  },
+  {
+    "type": "ceil",
+    "named": false
+  },
+  {
+    "type": "ceili",
+    "named": false
+  },
+  {
+    "type": "ceilin",
+    "named": false
+  },
+  {
+    "type": "ceiling",
+    "named": false
+  },
+  {
+    "type": "cla",
+    "named": false
+  },
+  {
+    "type": "clas",
+    "named": false
+  },
+  {
+    "type": "class",
+    "named": false
+  },
+  {
+    "type": "classi",
+    "named": false
+  },
+  {
+    "type": "classif",
+    "named": false
+  },
+  {
+    "type": "classify",
+    "named": false
+  },
+  {
+    "type": "com",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "comp",
+    "named": false
+  },
+  {
+    "type": "compl",
+    "named": false
+  },
+  {
+    "type": "comple",
+    "named": false
+  },
+  {
+    "type": "complex",
+    "named": false
+  },
+  {
+    "type": "con",
+    "named": false
+  },
+  {
+    "type": "cont",
+    "named": false
+  },
+  {
+    "type": "conte",
+    "named": false
+  },
+  {
+    "type": "conten",
+    "named": false
+  },
+  {
+    "type": "content",
+    "named": false
+  },
+  {
+    "type": "cou",
+    "named": false
+  },
+  {
+    "type": "coup",
+    "named": false
+  },
+  {
+    "type": "coupl",
+    "named": false
+  },
+  {
+    "type": "couple",
+    "named": false
+  },
+  {
+    "type": "ded",
+    "named": false
+  },
+  {
+    "type": "dedu",
+    "named": false
+  },
+  {
+    "type": "dedup",
+    "named": false
+  },
+  {
+    "type": "dedupl",
+    "named": false
+  },
+  {
+    "type": "dedupli",
+    "named": false
+  },
+  {
+    "type": "deduplic",
+    "named": false
+  },
+  {
+    "type": "deduplica",
+    "named": false
+  },
+  {
+    "type": "deduplicat",
+    "named": false
+  },
+  {
+    "type": "deduplicate",
+    "named": false
+  },
+  {
+    "type": "der",
+    "named": false
+  },
+  {
+    "type": "deri",
+    "named": false
+  },
+  {
+    "type": "deriv",
+    "named": false
+  },
+  {
+    "type": "deriva",
+    "named": false
+  },
+  {
+    "type": "derivat",
+    "named": false
+  },
+  {
+    "type": "derivati",
+    "named": false
+  },
+  {
+    "type": "derivativ",
+    "named": false
+  },
+  {
+    "type": "derivative",
+    "named": false
+  },
+  {
+    "type": "des",
+    "named": false
+  },
+  {
+    "type": "desh",
+    "named": false
+  },
+  {
+    "type": "desha",
+    "named": false
+  },
+  {
+    "type": "deshap",
+    "named": false
+  },
+  {
+    "type": "deshape",
+    "named": false
+  },
+  {
+    "type": "dip",
+    "named": false
+  },
+  {
+    "type": "div",
+    "named": false
+  },
+  {
+    "type": "divi",
+    "named": false
+  },
+  {
+    "type": "divid",
+    "named": false
+  },
+  {
+    "type": "divide",
+    "named": false
+  },
+  {
+    "type": "do",
+    "named": false
+  },
+  {
+    "type": "dro",
+    "named": false
+  },
+  {
+    "type": "drop",
+    "named": false
+  },
+  {
+    "type": "dup",
+    "named": false
+  },
+  {
+    "type": "dupl",
+    "named": false
+  },
+  {
+    "type": "dupli",
+    "named": false
+  },
+  {
+    "type": "duplic",
+    "named": false
+  },
+  {
+    "type": "duplica",
+    "named": false
+  },
+  {
+    "type": "duplicat",
+    "named": false
+  },
+  {
+    "type": "duplicate",
+    "named": false
+  },
+  {
+    "type": "eac",
+    "named": false
+  },
+  {
+    "type": "each",
+    "named": false
+  },
+  {
+    "type": "equ",
+    "named": false
+  },
+  {
+    "type": "equa",
+    "named": false
+  },
+  {
+    "type": "equal",
+    "named": false
+  },
+  {
+    "type": "equals",
+    "named": false
+  },
+  {
+    "type": "eta",
+    "named": false
+  },
+  {
+    "type": "eve",
+    "named": false
+  },
+  {
+    "type": "ever",
+    "named": false
+  },
+  {
+    "type": "evert",
+    "named": false
+  },
+  {
+    "type": "fal",
+    "named": false
+  },
+  {
+    "type": "fall",
+    "named": false
+  },
+  {
+    "type": "fil",
+    "named": false
+  },
+  {
+    "type": "fill",
+    "named": false
+  },
+  {
+    "type": "fin",
+    "named": false
+  },
+  {
+    "type": "find",
+    "named": false
+  },
+  {
+    "type": "fir",
+    "named": false
+  },
+  {
+    "type": "firs",
+    "named": false
+  },
+  {
+    "type": "first",
+    "named": false
+  },
+  {
+    "type": "fix",
+    "named": false
+  },
+  {
+    "type": "fli",
+    "named": false
+  },
+  {
+    "type": "flip",
+    "named": false
+  },
+  {
+    "type": "flo",
+    "named": false
+  },
+  {
+    "type": "floo",
+    "named": false
+  },
+  {
+    "type": "floor",
+    "named": false
+  },
+  {
+    "type": "fol",
+    "named": false
+  },
+  {
+    "type": "fold",
+    "named": false
+  },
+  {
+    "type": "for",
+    "named": false
+  },
+  {
+    "type": "fork",
+    "named": false
+  },
+  {
+    "type": "gap",
+    "named": false
+  },
+  {
+    "type": "geo",
+    "named": false
+  },
+  {
+    "type": "geom",
+    "named": false
+  },
+  {
+    "type": "geome",
+    "named": false
+  },
+  {
+    "type": "geomet",
+    "named": false
+  },
+  {
+    "type": "geometr",
+    "named": false
+  },
+  {
+    "type": "geometri",
+    "named": false
+  },
+  {
+    "type": "geometric",
+    "named": false
+  },
+  {
+    "type": "gro",
+    "named": false
+  },
+  {
+    "type": "grou",
+    "named": false
+  },
+  {
+    "type": "group",
+    "named": false
+  },
+  {
+    "type": "ide",
+    "named": false
+  },
+  {
+    "type": "iden",
+    "named": false
+  },
+  {
+    "type": "ident",
+    "named": false
+  },
+  {
+    "type": "identi",
+    "named": false
+  },
+  {
+    "type": "identit",
+    "named": false
+  },
+  {
+    "type": "identity",
+    "named": false
+  },
+  {
+    "type": "ind",
+    "named": false
+  },
+  {
+    "type": "inde",
+    "named": false
+  },
+  {
+    "type": "index",
+    "named": false
+  },
+  {
+    "type": "indexo",
+    "named": false
+  },
+  {
+    "type": "indexof",
+    "named": false
+  },
+  {
+    "type": "inf",
+    "named": false
+  },
+  {
+    "type": "infi",
+    "named": false
+  },
+  {
+    "type": "infin",
+    "named": false
+  },
+  {
+    "type": "infini",
+    "named": false
+  },
+  {
+    "type": "infinit",
+    "named": false
+  },
+  {
+    "type": "infinity",
+    "named": false
+  },
+  {
+    "type": "int",
+    "named": false
+  },
+  {
+    "type": "inte",
+    "named": false
+  },
+  {
+    "type": "integ",
+    "named": false
+  },
+  {
+    "type": "integr",
+    "named": false
+  },
+  {
+    "type": "integra",
+    "named": false
+  },
+  {
+    "type": "integral",
+    "named": false
+  },
+  {
+    "type": "inv",
+    "named": false
+  },
+  {
+    "type": "inve",
+    "named": false
+  },
+  {
+    "type": "inven",
+    "named": false
+  },
+  {
+    "type": "invent",
+    "named": false
+  },
+  {
+    "type": "invento",
+    "named": false
+  },
+  {
+    "type": "inventor",
+    "named": false
+  },
+  {
+    "type": "inventory",
+    "named": false
+  },
+  {
+    "type": "joi",
+    "named": false
+  },
+  {
+    "type": "join",
+    "named": false
+  },
+  {
+    "type": "kee",
+    "named": false
+  },
+  {
+    "type": "keep",
+    "named": false
+  },
+  {
+    "type": "las",
+    "named": false
+  },
+  {
+    "type": "last",
+    "named": false
+  },
+  {
+    "type": "len",
+    "named": false
+  },
+  {
+    "type": "leng",
+    "named": false
+  },
+  {
+    "type": "lengt",
+    "named": false
+  },
+  {
+    "type": "length",
+    "named": false
+  },
+  {
+    "type": "log",
+    "named": false
+  },
+  {
+    "type": "loga",
+    "named": false
+  },
+  {
+    "type": "logar",
+    "named": false
+  },
+  {
+    "type": "logari",
+    "named": false
+  },
+  {
+    "type": "logarit",
+    "named": false
+  },
+  {
+    "type": "logarith",
+    "named": false
+  },
+  {
+    "type": "logarithm",
+    "named": false
+  },
+  {
+    "type": "mas",
+    "named": false
+  },
+  {
+    "type": "mask",
+    "named": false
+  },
+  {
+    "type": "mat",
+    "named": false
+  },
+  {
+    "type": "matc",
+    "named": false
+  },
+  {
+    "type": "match",
+    "named": false
+  },
+  {
+    "type": "max",
+    "named": false
+  },
+  {
+    "type": "maxi",
+    "named": false
+  },
+  {
+    "type": "maxim",
+    "named": false
+  },
+  {
+    "type": "maximu",
+    "named": false
+  },
+  {
+    "type": "maximum",
+    "named": false
+  },
+  {
+    "type": "mem",
+    "named": false
+  },
+  {
+    "type": "memb",
+    "named": false
+  },
+  {
+    "type": "membe",
+    "named": false
+  },
+  {
+    "type": "member",
+    "named": false
+  },
+  {
+    "type": "membero",
+    "named": false
+  },
+  {
+    "type": "memberof",
+    "named": false
+  },
+  {
+    "type": "min",
+    "named": false
+  },
+  {
+    "type": "mini",
+    "named": false
+  },
+  {
+    "type": "minim",
+    "named": false
+  },
+  {
+    "type": "minimu",
+    "named": false
+  },
+  {
+    "type": "minimum",
+    "named": false
+  },
+  {
+    "type": "mod",
+    "named": false
+  },
+  {
+    "type": "modu",
+    "named": false
+  },
+  {
+    "type": "modul",
+    "named": false
+  },
+  {
+    "type": "modulu",
+    "named": false
+  },
+  {
+    "type": "modulus",
+    "named": false
+  },
+  {
+    "type": "mul",
+    "named": false
+  },
+  {
+    "type": "mult",
+    "named": false
+  },
+  {
+    "type": "multi",
+    "named": false
+  },
+  {
+    "type": "multip",
+    "named": false
+  },
+  {
+    "type": "multipl",
+    "named": false
+  },
+  {
+    "type": "multiply",
+    "named": false
+  },
+  {
+    "type": "neg",
+    "named": false
+  },
+  {
+    "type": "nega",
+    "named": false
+  },
+  {
+    "type": "negat",
+    "named": false
+  },
+  {
+    "type": "negate",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "obv",
+    "named": false
+  },
+  {
+    "type": "obve",
+    "named": false
+  },
+  {
+    "type": "obver",
+    "named": false
+  },
+  {
+    "type": "obvers",
+    "named": false
+  },
+  {
+    "type": "obverse",
+    "named": false
+  },
+  {
+    "type": "occ",
+    "named": false
+  },
+  {
+    "type": "occu",
+    "named": false
+  },
+  {
+    "type": "occur",
+    "named": false
+  },
+  {
+    "type": "occurr",
+    "named": false
+  },
+  {
+    "type": "occurre",
+    "named": false
+  },
+  {
+    "type": "occurren",
+    "named": false
+  },
+  {
+    "type": "occurrenc",
+    "named": false
+  },
+  {
+    "type": "occurrence",
+    "named": false
+  },
+  {
+    "type": "occurrences",
+    "named": false
+  },
+  {
+    "type": "off",
+    "named": false
+  },
+  {
+    "type": "on",
+    "named": false
+  },
+  {
+    "type": "or",
+    "named": false
+  },
+  {
+    "type": "ori",
+    "named": false
+  },
+  {
+    "type": "orie",
+    "named": false
+  },
+  {
+    "type": "orien",
+    "named": false
+  },
+  {
+    "type": "orient",
+    "named": false
+  },
+  {
+    "type": "par",
+    "named": false
+  },
+  {
+    "type": "pars",
+    "named": false
+  },
+  {
+    "type": "parse",
+    "named": false
+  },
+  {
+    "type": "part",
+    "named": false
+  },
+  {
+    "type": "parti",
+    "named": false
+  },
+  {
+    "type": "partit",
+    "named": false
+  },
+  {
+    "type": "partiti",
+    "named": false
+  },
+  {
+    "type": "partitio",
+    "named": false
+  },
+  {
+    "type": "partition",
+    "named": false
+  },
+  {
+    "type": "pi",
+    "named": false
+  },
+  {
+    "type": "pic",
+    "named": false
+  },
+  {
+    "type": "pick",
+    "named": false
+  },
+  {
+    "type": "pop",
+    "named": false
+  },
+  {
+    "type": "pow",
+    "named": false
+  },
+  {
+    "type": "powe",
+    "named": false
+  },
+  {
+    "type": "power",
+    "named": false
+  },
+  {
+    "type": "ran",
+    "named": false
+  },
+  {
+    "type": "rand",
+    "named": false
+  },
+  {
+    "type": "rando",
+    "named": false
+  },
+  {
+    "type": "random",
+    "named": false
+  },
+  {
+    "type": "rang",
+    "named": false
+  },
+  {
+    "type": "range",
+    "named": false
+  },
+  {
+    "type": "rea",
+    "named": false
+  },
+  {
+    "type": "reac",
+    "named": false
+  },
+  {
+    "type": "reach",
+    "named": false
+  },
+  {
+    "type": "red",
+    "named": false
+  },
+  {
+    "type": "redu",
+    "named": false
+  },
+  {
+    "type": "reduc",
+    "named": false
+  },
+  {
+    "type": "reduce",
+    "named": false
+  },
+  {
+    "type": "rep",
+    "named": false
+  },
+  {
+    "type": "repe",
+    "named": false
+  },
+  {
+    "type": "repea",
+    "named": false
+  },
+  {
+    "type": "repeat",
+    "named": false
+  },
+  {
+    "type": "rer",
+    "named": false
+  },
+  {
+    "type": "rera",
+    "named": false
+  },
+  {
+    "type": "reran",
+    "named": false
+  },
+  {
+    "type": "rerank",
+    "named": false
+  },
+  {
+    "type": "res",
+    "named": false
+  },
+  {
+    "type": "resh",
+    "named": false
+  },
+  {
+    "type": "resha",
+    "named": false
+  },
+  {
+    "type": "reshap",
+    "named": false
+  },
+  {
+    "type": "reshape",
+    "named": false
+  },
+  {
+    "type": "rev",
+    "named": false
+  },
+  {
+    "type": "reve",
+    "named": false
+  },
+  {
+    "type": "rever",
+    "named": false
+  },
+  {
+    "type": "revers",
+    "named": false
+  },
+  {
+    "type": "reverse",
+    "named": false
+  },
+  {
+    "type": "ris",
+    "named": false
+  },
+  {
+    "type": "rise",
+    "named": false
+  },
+  {
+    "type": "rot",
+    "named": false
+  },
+  {
+    "type": "rota",
+    "named": false
+  },
+  {
+    "type": "rotat",
+    "named": false
+  },
+  {
+    "type": "rotate",
+    "named": false
+  },
+  {
+    "type": "rou",
+    "named": false
+  },
+  {
+    "type": "roun",
+    "named": false
+  },
+  {
+    "type": "round",
+    "named": false
+  },
+  {
+    "type": "row",
+    "named": false
+  },
+  {
+    "type": "rows",
+    "named": false
+  },
+  {
+    "type": "sca",
+    "named": false
+  },
+  {
+    "type": "scan",
+    "named": false
+  },
+  {
+    "type": "sel",
+    "named": false
+  },
+  {
+    "type": "sele",
+    "named": false
+  },
+  {
+    "type": "selec",
+    "named": false
+  },
+  {
+    "type": "select",
+    "named": false
+  },
+  {
+    "type": "self",
+    "named": false
+  },
+  {
+    "type": "sha",
+    "named": false
+  },
+  {
+    "type": "shap",
+    "named": false
+  },
+  {
+    "type": "shape",
+    "named": false
+  },
+  {
+    "type": "sig",
+    "named": false
+  },
+  {
+    "type": "sign",
+    "named": false
+  },
+  {
+    "type": "sin",
+    "named": false
+  },
+  {
+    "type": "sine",
+    "named": false
+  },
+  {
+    "type": "sor",
+    "named": false
+  },
+  {
+    "type": "sort",
+    "named": false
+  },
+  {
+    "type": "sqr",
+    "named": false
+  },
+  {
+    "type": "sqrt",
+    "named": false
+  },
+  {
+    "type": "sta",
+    "named": false
+  },
+  {
+    "type": "stac",
+    "named": false
+  },
+  {
+    "type": "stack",
+    "named": false
+  },
+  {
+    "type": "ste",
+    "named": false
+  },
+  {
+    "type": "sten",
+    "named": false
+  },
+  {
+    "type": "stenc",
+    "named": false
+  },
+  {
+    "type": "stenci",
+    "named": false
+  },
+  {
+    "type": "stencil",
+    "named": false
+  },
+  {
+    "type": "sub",
+    "named": false
+  },
+  {
+    "type": "subscript",
+    "named": true
+  },
+  {
+    "type": "subt",
+    "named": false
+  },
+  {
+    "type": "subtr",
+    "named": false
+  },
+  {
+    "type": "subtra",
+    "named": false
+  },
+  {
+    "type": "subtrac",
+    "named": false
+  },
+  {
+    "type": "subtract",
+    "named": false
+  },
+  {
+    "type": "swi",
+    "named": false
+  },
+  {
+    "type": "swit",
+    "named": false
+  },
+  {
+    "type": "switc",
+    "named": false
+  },
+  {
+    "type": "switch",
+    "named": false
+  },
+  {
+    "type": "tab",
+    "named": false
+  },
+  {
+    "type": "tabl",
+    "named": false
+  },
+  {
+    "type": "table",
+    "named": false
+  },
+  {
+    "type": "tak",
+    "named": false
+  },
+  {
+    "type": "take",
+    "named": false
+  },
+  {
+    "type": "tau",
+    "named": false
+  },
+  {
+    "type": "tra",
+    "named": false
+  },
+  {
+    "type": "tran",
+    "named": false
+  },
+  {
+    "type": "trans",
+    "named": false
+  },
+  {
+    "type": "transp",
+    "named": false
+  },
+  {
+    "type": "transpo",
+    "named": false
+  },
+  {
+    "type": "transpos",
+    "named": false
+  },
+  {
+    "type": "transpose",
+    "named": false
+  },
+  {
+    "type": "try",
+    "named": false
+  },
+  {
+    "type": "tup",
+    "named": false
+  },
+  {
+    "type": "tupl",
+    "named": false
+  },
+  {
+    "type": "tuple",
+    "named": false
+  },
+  {
+    "type": "tuples",
+    "named": false
+  },
+  {
+    "type": "un",
+    "named": false
+  },
+  {
+    "type": "und",
+    "named": false
+  },
+  {
+    "type": "unde",
+    "named": false
+  },
+  {
+    "type": "under",
+    "named": false
+  },
+  {
+    "type": "uni",
+    "named": false
+  },
+  {
+    "type": "uniq",
+    "named": false
+  },
+  {
+    "type": "uniqu",
+    "named": false
+  },
+  {
+    "type": "unique",
+    "named": false
+  },
+  {
+    "type": "whe",
+    "named": false
+  },
+  {
+    "type": "wher",
+    "named": false
+  },
+  {
+    "type": "where",
+    "named": false
+  },
+  {
+    "type": "win",
+    "named": false
+  },
+  {
+    "type": "wind",
+    "named": false
+  },
+  {
+    "type": "windo",
+    "named": false
+  },
+  {
+    "type": "window",
+    "named": false
+  },
+  {
+    "type": "windows",
+    "named": false
+  },
+  {
+    "type": "wit",
+    "named": false
+  },
+  {
+    "type": "with",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  },
+  {
+    "type": "¤",
+    "named": false
+  },
+  {
+    "type": "¬",
+    "named": false
+  },
+  {
+    "type": "¯",
+    "named": false
+  },
+  {
+    "type": "°",
+    "named": false
+  },
+  {
+    "type": "±",
+    "named": false
+  },
+  {
+    "type": "×",
+    "named": false
+  },
+  {
+    "type": "÷",
+    "named": false
+  },
+  {
+    "type": "˙",
+    "named": false
+  },
+  {
+    "type": "˜",
+    "named": false
+  },
+  {
+    "type": "η",
+    "named": false
+  },
+  {
+    "type": "π",
+    "named": false
+  },
+  {
+    "type": "τ",
+    "named": false
+  },
+  {
+    "type": "⁅",
+    "named": false
+  },
+  {
+    "type": "ⁿ",
+    "named": false
+  },
+  {
+    "type": "ₙ",
+    "named": false
+  },
+  {
+    "type": "ℂ",
+    "named": false
+  },
+  {
+    "type": "↘",
+    "named": false
+  },
+  {
+    "type": "↙",
+    "named": false
+  },
+  {
+    "type": "↥",
+    "named": false
+  },
+  {
+    "type": "↧",
+    "named": false
+  },
+  {
+    "type": "↯",
+    "named": false
+  },
+  {
+    "type": "↻",
+    "named": false
+  },
+  {
+    "type": "⇌",
+    "named": false
+  },
+  {
+    "type": "⇡",
+    "named": false
+  },
+  {
+    "type": "∂",
+    "named": false
+  },
+  {
+    "type": "∊",
+    "named": false
+  },
+  {
+    "type": "∘",
+    "named": false
+  },
+  {
+    "type": "√",
+    "named": false
+  },
+  {
+    "type": "∞",
+    "named": false
+  },
+  {
+    "type": "∠",
+    "named": false
+  },
+  {
+    "type": "∧",
+    "named": false
+  },
+  {
+    "type": "∨",
+    "named": false
+  },
+  {
+    "type": "∩",
+    "named": false
+  },
+  {
+    "type": "∫",
+    "named": false
+  },
+  {
+    "type": "∵",
+    "named": false
+  },
+  {
+    "type": "∿",
+    "named": false
+  },
+  {
+    "type": "≍",
+    "named": false
+  },
+  {
+    "type": "≠",
+    "named": false
+  },
+  {
+    "type": "≡",
+    "named": false
+  },
+  {
+    "type": "≤",
+    "named": false
+  },
+  {
+    "type": "≥",
+    "named": false
+  },
+  {
+    "type": "⊂",
+    "named": false
+  },
+  {
+    "type": "⊃",
+    "named": false
+  },
+  {
+    "type": "⊏",
+    "named": false
+  },
+  {
+    "type": "⊓",
+    "named": false
+  },
+  {
+    "type": "⊕",
+    "named": false
+  },
+  {
+    "type": "⊗",
+    "named": false
+  },
+  {
+    "type": "⊘",
+    "named": false
+  },
+  {
+    "type": "⊙",
+    "named": false
+  },
+  {
+    "type": "⊚",
+    "named": false
+  },
+  {
+    "type": "⊛",
+    "named": false
+  },
+  {
+    "type": "⊜",
+    "named": false
+  },
+  {
+    "type": "⊞",
+    "named": false
+  },
+  {
+    "type": "⊟",
+    "named": false
+  },
+  {
+    "type": "⊡",
+    "named": false
+  },
+  {
+    "type": "⊢",
+    "named": false
+  },
+  {
+    "type": "⊣",
+    "named": false
+  },
+  {
+    "type": "⊥",
+    "named": false
+  },
+  {
+    "type": "⊸",
+    "named": false
+  },
+  {
+    "type": "⋅",
+    "named": false
+  },
+  {
+    "type": "⋕",
+    "named": false
+  },
+  {
+    "type": "⋯",
+    "named": false
+  },
+  {
+    "type": "⌅",
+    "named": false
+  },
+  {
+    "type": "⌈",
+    "named": false
+  },
+  {
+    "type": "⌊",
+    "named": false
+  },
+  {
+    "type": "⌕",
+    "named": false
+  },
+  {
+    "type": "⌝",
+    "named": false
+  },
+  {
+    "type": "⌵",
+    "named": false
+  },
+  {
+    "type": "⍆",
+    "named": false
+  },
+  {
+    "type": "⍉",
+    "named": false
+  },
+  {
+    "type": "⍏",
+    "named": false
+  },
+  {
+    "type": "⍖",
+    "named": false
+  },
+  {
+    "type": "⍚",
+    "named": false
+  },
+  {
+    "type": "⍜",
+    "named": false
+  },
+  {
+    "type": "⍢",
+    "named": false
+  },
+  {
+    "type": "⍣",
+    "named": false
+  },
+  {
+    "type": "⍤",
+    "named": false
+  },
+  {
+    "type": "⍥",
+    "named": false
+  },
+  {
+    "type": "⍩",
+    "named": false
+  },
+  {
+    "type": "□",
+    "named": false
+  },
+  {
+    "type": "△",
+    "named": false
+  },
+  {
+    "type": "▽",
+    "named": false
+  },
+  {
+    "type": "◇",
+    "named": false
+  },
+  {
+    "type": "◌",
+    "named": false
+  },
+  {
+    "type": "◠",
+    "named": false
+  },
+  {
+    "type": "◡",
+    "named": false
+  },
+  {
+    "type": "◫",
+    "named": false
+  },
+  {
+    "type": "◰",
+    "named": false
+  },
+  {
+    "type": "◴",
+    "named": false
+  },
+  {
+    "type": "◿",
+    "named": false
+  },
+  {
+    "type": "☇",
+    "named": false
+  },
+  {
+    "type": "♭",
+    "named": false
+  },
+  {
+    "type": "⚂",
+    "named": false
+  },
+  {
+    "type": "⟜",
+    "named": false
+  },
+  {
+    "type": "⤙",
+    "named": false
+  },
+  {
+    "type": "⤚",
+    "named": false
+  },
+  {
+    "type": "⤸",
+    "named": false
+  },
+  {
+    "type": "⦷",
+    "named": false
+  },
+  {
+    "type": "⧅",
+    "named": false
+  },
+  {
+    "type": "⧆",
+    "named": false
+  },
+  {
+    "type": "⧈",
+    "named": false
+  },
+  {
+    "type": "⧋",
+    "named": false
+  },
+  {
+    "type": "⧻",
+    "named": false
+  },
+  {
+    "type": "⨬",
+    "named": false
+  },
+  {
+    "type": "⩜",
+    "named": false
+  },
+  {
+    "type": "⬚",
+    "named": false
+  },
+  {
+    "type": "𝄐",
+    "named": false
+  }
+]
